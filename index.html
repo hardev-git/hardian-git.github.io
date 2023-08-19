@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html PUBLIC '-//WAPFORUM//DTD XHTML Mobile 1.0//EN' 'http://www.wapforum.org/DTD/xhtml-mobile10.dtd'>
+	<head>
+		<title>Hubungan</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Hardiansyah">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-scale=1.0, maximal-scale=1">
+		<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+		<link href="index.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+	<script type="text/javascript">
+		function klik1() {
+			var audio = document.getElementById("klik1");
+			audio.play();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		function klik2() {
+			var audio = document.getElementById("klik2");
+			audio.play();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		function f1() {
+			var audio = document.getElementById("f1");
+			audio.play();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		function f2() {
+			var audio = document.getElementById("f2");
+			audio.play();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		function f3() {
+			var audio = document.getElementById("f3");
+			audio.play();
+		}
+	</script>
+	
+	<script type="text/javascript">
+		function f4() {
+			var audio = document.getElementById("f4");
+			audio.play();
+		}
+	</script>
+	
+	<audio id="klik1" src="media/sound/klik1.m4a"></audio>
+	<audio id="klik2" src="media/sound/klik2.m4a"></audio>
+	<audio id="f1" src="media/sound/s1.mp3"></audio>
+	<audio id="f2" src="media/sound/s2.mp3"></audio>
+	<audio id="f3" src="media/sound/s3.mp3"></audio>
+	<audio id="f4" src="media/sound/s4.mp3"></audio>
+	
+	<div class="konten">
+		
+		
+		<section class="auto-slider">
+            <div id="slider">
+                <figure>
+                    <img src="images/slide1.jpg" class="slidess">
+                    <img src="images/slide2.jpg" class="slidess">
+                    <img src="images/slide3.jpg" class="slidess">
+                    <img src="images/slide4.jpg" class="slidess">
+                    <img src="images/slide5.jpg" class="slidess">
+                </figure>
+                <div class="indicator"></div>
+    </div>
+</section>
+	
+	<script>
+		var myIndex = 0;
+		carousel();
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i <x.length; i++) {
+				x[i].style.display = "none";
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 4000);
+		}
+	</script>
+
+	<h4 class="blink" style="text-align: center">Intro's</h4>
+	<button class="accordion" onclick="klik1()"><i class="fa fa-caret-down"></i> Tentang Hubungan <img src="gif/gif1.gif" style="width: 35px; height: auto; vertical-align: middle"></button>
+	<div class="panel">
+		<p><i class="fa fa-venus-mars"></i> Hardian's & Annah's Relationship! ♥</p>
+	</div>
+	
+	<button class="accordion" onclick="klik1()"><i class="fa fa-caret-down"></i> Status Hubungan <img src="gif/gif2.gif" style="width: 35px; height: auto; vertical-align: middle"></button>
+	<div class="panel">
+		<p>
+			<i class="fa fa-heart"></i> Sejak: 
+			<span id="sejak">11-Oktober-2022</span>
+		</p>
+		
+		<hr width="100%" align="center" color="snow" size="1px">
+			
+		<p>
+			<i class="fa fa-circle-o-notch fa-spin"></i> Lamanya Hubungan: 
+			<span id="umur">
+				<u><span class="bulan">-</span></u>
+				<br/>
+				<sub class="bg">
+					+<span class="hari">-</span><span class="jam">-</span><span class="mnt">-</span><span class="dtk">-</span>
+				</sub>
+			</span>
+		</p>
+		
+		<hr width="100%" align="center" color="snow" size="1px">
+			
+		<p>
+			<i class="fa fa-spinner fa-pulse"></i> Mensiv ke-10: 
+			<u>11-September-2023</u>
+			<br/>
+			<sub class="bg">
+				<span id="menujuH"></span><span id="menuju"></span>
+			</sub>
+		</p>
+		
+		<hr width="100%" align="center" color="snow" size="1px">
+			
+		<p>
+			<i class="fa fa-spinner fa-pulse"></i> Rencana Menikah: 
+			<u>01-Januari-2025</u>
+			<br/>
+			<sub class="bg">
+				-<span id="target"></span> ~ <span id="targetH"></span>
+			</sub>
+		</p>
+		
+		<hr width="100%" align="center" color="snow" size="1px">
+		
+		<p>
+			<i class="fa fa-map-pin"></i> Kota Dikunjungi:
+			<u>5 Kota</u>
+			<br/>
+			<sub class="bg">
+				Jakarta, Bogor, Depok, Tangerang, Bekasi
+			</sub>
+		</p>
+		
+		<hr width="100%" align="center" color="snow" size="1px">
+		
+		<p>
+			<i class="fa fa-credit-card"></i> Tabungan:
+			<u>42.750.100-,</u>
+		</p>
+		
+		<hr width="100%" align="center" color="snow" size="1px">
+		
+		<p>
+			<i class="fa fa-calendar"></i> Waktu: 
+			<span id="jam"></span>
+		</p>
+		<p>
+			<i class="fa fa-calendar"></i> Tanggal: 
+			<span id="tanggal"></span>
+		</p>
+	</div>
+	
+	<button class="accordion" onclick="klik1()"><i class="fa fa-caret-down"></i> Fitur <img src="gif/gif3.gif" style="width: 35px; height: auto; vertical-align: middle"></button>
+	<div class="panel">
+		<br/>
+		<img src="gif/fitur1.gif">
+		<p><!--<i class="fa fa-bug"></i>--> Anti Perusak Hubungan</p>
+		<label class="switch">
+			<input type="checkbox" onclick="f1();this.disabled=true">
+			<span class="slider round"></span>
+		</label>
+		<hr width="100%" align="center" color="snow" size="1px">
+		<img src="gif/fitur2.gif">
+		<p><!--<i class="fa fa-assistive-listening-systems"></i>--> No Hijacked</p>
+		<label class="switch">
+			<input type="checkbox" onclick="f2();this.disabled=true">
+			<span class="slider round"></span>
+		</label>
+		<hr width="100%" align="center" color="snow" size="1px">
+		<img src="gif/fitur3.gif">
+		<p><!--<i class="fa fa-heartbeat"></i>--> Proteksi Hubungan</p>
+		<label class="switch">
+			<input type="checkbox" onclick="f3();this.disabled=true">
+			<span class="slider round"></span>
+		</label>
+		<hr width="100%" align="center" color="snow" size="1px">
+		<img src="gif/fitur4.gif">
+		<p><!--<i class="fa fa-magic"></i>--> Perlindungan Dari Virus</p>
+		<label class="switch">
+			<input type="checkbox" onclick="f4();this.disabled=true">
+			<span class="slider round"></span>
+		</label>
+		<p class="text-fitur" style="text-align: center"><i class="fa fa-shield"></i> Powered by Avast Anti Virus</p>
+	</div>
+	
+	<br/>
+	<!---->
+	<br/>
+		
+	<img src="gif/wall2.gif" class="wall">
+	<h4 class="blink" style="text-align: center">Relationship Gallery's</h4>
+	<div class="container">
+		<div class="slide">
+			<span class="numbertext">1 / 9</span>
+			<img src="media/photo/ayang01.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">2 / 9</span>
+			<img src="media/photo/ayang02.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">3 / 9</span>
+			<img src="media/photo/ayang03.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">4 / 9</span>
+			<img src="media/photo/ayang04.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">5 / 9</span>
+			<img src="media/photo/ayang05.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">6 / 9</span>
+			<img src="media/photo/ayang06.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">7 / 9</span>
+			<img src="media/photo/ayang07.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">8 / 9</span>
+			<img src="media/photo/ayang08.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<div class="slide">
+			<span class="numbertext">9 / 9</span>
+			<img src="media/photo/ayang09.jpg" style="width: 100%; height: auto; object-fit: cover">
+		</div>
+		
+		<a class="mundur" onclick="plusSlides(-1);klik2()">❮</a>
+		<a class="maju" onclick="plusSlides(1);klik2()">❯</a>
+		
+		<div class="caption-container">
+			<p id="caption"></p>
+		</div>
+		
+		<div class="row" onclick="klik2()">
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang01.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(1)" alt="Ayanggg 🥺">
+			</div>
+		
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang02.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(2)" alt="Ayanggg 🥺">
+			</div>
+		
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang03.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(3)" alt="Ayanggg 🥺">
+			</div>
+		
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang04.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(4)" alt="Ayanggg 🥺">
+			</div>
+		
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang05.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(5)" alt="Ayanggg 🥺">
+			</div>
+		
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang06.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(6)" alt="Ayanggg 🥺">
+			</div>
+			
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang07.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(7)" alt="Ayanggg 🥺">
+			</div>
+		
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang08.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(8)" alt="Ayanggg 🥺">
+			</div>
+			
+			<div class="column">
+				<img class="img-slide cursor" src="media/photo/ayang09.jpg" style="width:100%; height: 110px; object-fit: cover" onclick="currentSlide(9)" alt="Ayanggg 🥺">
+			</div>
+		</div>
+	</div>
+	
+	<br/>
+	<!---->
+	<br/>
+		
+	<img src="gif/wall3.gif" loop="100" class="wall">
+	<h4 class="blink" style="text-align: center">Bio Data</h4>
+	<div class="container">
+		<img src="media/photo/bio1.jpg" alt="Avatar" class="image" onclick="klik()">
+		<div class="overlay">
+			<div class="text">
+				<p>Hardiansyah</p>
+				<p>13-Sep-1998 (24)</p>
+				<p>Bekasi, Indonesia</p>
+				<p>175cm - 48kg</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<img src="media/photo/ayang02.jpg" alt="Avatar" class="image" onclick="klik()">
+		<div class="overlay">
+			<div class="text">
+				<p>Dede Nurhasanah</p>
+				<p>04-Mar-2001 (21)</p>
+				<p>Sukabumi, Indonesia</p>
+				<p>172cm - 55kg</p>
+			</div>
+		</div>
+	</div>
+	
+	<!---->
+	
+	<footer>
+		<p>Kontak Developer:</p>
+		<sub>+62 (895) 2930-5947 (<a href="https://wa.me/6289529305947">Whatsapp</a>, Tele & <a href="tel:089529305947">Tlp</a>)</sub>
+		<br>
+		<sub>https://facebook.com/acces.py (<a href="https://mbasic.facebook.com/acces.py">Facebook</a>)</sub>
+		<br>
+		<sub>accespy.mail@gmail.com (<a onclick="parent.location='mailto:accespy.mail@gmail.com?subject=Hallo Hardiansyah'">Email</a>)</sub>
+		<br><br>
+		<p>Terimakasih:</p>
+		<sub>Referensi oleh: <a href="https://www.w3schools.com/howto/default.asp">W3SCHOOLS.COM (How To)</a></sub>
+		<br>
+		<sub>Jquery Plugin oleh: <a href="https://www.jqueryscript.net/animation/twinkling-stars-effect-starlight.html">Twinkling Stars Effect Starlight</a></sub>
+		<br>
+		<sub>Font oleh: <a href="https://fonts.google.com/specimen/Rubik">Rubik (Google Font)</a></sub>
+		<br><br>
+		<p style="text-align: center; color: salmon">©2022 - 1.50</p>
+		<hr align="center" width="50%" margin="0px" size="1px" color="#FFF">
+	</footer>
+	
+	<img class="img-abs" src="gif/abs1.gif" style="top: 0%; left: 0%">
+	<img class="img-abs" src="gif/abs2.gif" style="top: 0%; right: 1%">
+	<img class="img-abs" src="gif/abs5.gif" style="bottom: 50%; left: 0%">
+	<img class="img-abs" src="gif/abs6.gif" style="bottom: 50%; right: 1%">
+	<img class="img-abs" src="gif/abs3.gif" style="bottom: 1%; left: 0%">
+	<img class="img-abs" src="gif/abs4.gif" style="bottom: 1%; right: 1%">
+	
+	<script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='45183e5d4c38dbf7e46a4a334068293c1d6d858254a5750b6af0dcad2ec2d5d4';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+
+	<script type="text/javascript">
+	var slideIndex = 1;
+	showSlides(slideIndex);
+	function plusSlides(n) {
+		showSlides(slideIndex += n);
+	}
+	function currentSlide(n) {
+		showSlides(slideIndex = n);
+	}
+	function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("slide");
+		var dots = document.getElementsByClassName("img-slide");
+		var captionText = document.getElementById("caption");
+		if (n > slides.length) {slideIndex = 1}
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" aktif", "");
+		}
+		slides[slideIndex-1].style.display = "block";
+		dots[slideIndex-1].className += " aktif";
+		captionText.innerHTML = dots[slideIndex-1].alt;
+	}
+	</script>
+	
+	<script type="text/javascript">
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+	</script>
+	
+	<script>
+	function showTime() {
+		var e="",
+		t=new Date,
+		a=t.
+		getHours(),
+		n=t.getMinutes(),
+		i=t.getSeconds();
+		a>24&&(e="Pagi"),
+		a>0&&(e="Pagi"),
+		a>9&&(e="Siang"),
+		a>14&&(e="Sore"),
+		a>18&&(e="Malam"),
+		0==a&&(a=12),
+		a>12&&(a=a),
+		a=checkTime(a),
+		n=checkTime(n),
+		i=checkTime(i),
+		document.getElementById("jam").innerHTML=a+":"+n+":"+i+" "+e
+	}
+	function checkTime(e) {
+		return e<10&&(e="0"+e),e
+	}
+	window.onload=function() {
+		countUpFromTime("Oct 11, 2022 00:00:00","umur")
+	},
+	setInterval(showTime,500);
+	</script>
+	
+	<script type="text/javascript">
+	// MENIKAH
+	var target = new Date("01 Jan, 2025 00:00:00").getTime();
+	// var target = new Date("09 Sep, 2024 00:00:00").getMonth();
+	// Perbarui hitungan mundur setiap 1 detik
+	var xTarget = setInterval(function() {
+	// Dapatkan tanggal dan waktu hari ini
+	var nTarget = new Date().getTime();
+	// Temukan jarak antara sekarang dan tanggal hitung mundur
+	var distance = target - nTarget;
+	// Kalkulasi waktu untuk tahun, bulan, hari, jam, menit dan detik
+	var years = Math.floor(distance /  (1000 * 60 * 60 * 24 * 31 * 12));
+	var months = Math.floor(distance /  (1000 * 60 * 60 * 24 * 31));
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	// Menampilkan Hasil di Element
+	document.getElementById("target").innerHTML = days + "hari, " + hours + "jam, " + minutes + "menit, " + seconds + "detik";
+	document.getElementById("targetH").innerHTML = + years + "tahun / " + months + "bulan lagi";
+	// Jika hitungan mundur selesai, tuliskan sesuatu dalam Teks
+	if (distance < 0) {
+		clearInterval(xTarget);
+		document.getElementById("target").innerHTML = "Happy Weding's Day! 🥰❤️";
+		document.getElementById("targetH").innerHTML = "";
+	}}, 1000);
+	</script>
+	
+	<!-- MENSIVERSARRY -->
+	<script type="text/javascript">
+	var mensiv = new Date("Sep 11, 2023 00:00:00").getTime();
+	var xMensiv = setInterval(function() {
+	var nMensiv = new Date().getTime();
+	var distance = mensiv - nMensiv;
+	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	document.getElementById("menuju").innerHTML = hours + "jam, " + minutes + "menit, " + seconds + "detik";
+	document.getElementById("menujuH").innerHTML = "-" + days + "hari, ";
+	if (distance < 0) {
+		clearInterval(xMensiv);
+		document.getElementById("menuju").innerHTML = "Happy Hardian's & Annah's Day! 🥰💖";
+		document.getElementById("menujuH").innerHTML = "";
+	}}, 1000);
+	</script>
+	
+	<!-- INDEXAN -->
+	<script type="text/javascript">
+	function countUpFromTime(e,t) {
+		e=new Date(e).getTime();
+		var a=new Date-(e=new Date(e));
+		months = Math.floor(a /  (1000 * 60 * 60 * 24 * 31)),
+		hariUmur=Math.floor(a/864e5*1),
+		jamUmur=Math.floor(a%864e5/36e5*1),
+		menitUmur=Math.floor(a%864e5%36e5/6e4*1),
+		detikUmur=Math.floor(a%864e5%36e5%6e4/1e3*1);
+		var n=document.getElementById(t);
+		n.getElementsByClassName("bulan")[0].innerHTML=months+" Bulan",
+		n.getElementsByClassName("hari")[0].innerHTML=hariUmur+"hari, ",
+		n.getElementsByClassName("jam")[0].innerHTML=jamUmur+"jam, ",
+		n.getElementsByClassName("mnt")[0].innerHTML=menitUmur+"menit, ",
+		n.getElementsByClassName("dtk")[0].innerHTML=detikUmur+"detik",
+		clearTimeout(countUpFromTime.interval),countUpFromTime.interval=setTimeout(function() {
+			countUpFromTime(e,t)
+		},1e3)
+	}
+	</script>
+	
+	<!-- TGL & JAM -->
+	<script type="text/javascript">
+	var months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+	var days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum&#39;at", "Sabtu"];
+	var date = new Date();
+	var day = date.getDate();
+	var month = date.getMonth();
+	var thisDay = date.getDay(),
+	thisDay = days[thisDay];
+	var yy = date.getYear();
+	var year = (yy < 1000) ? yy + 1900 : yy;
+	document.getElementById("tanggal").innerHTML = thisDay + ", " + day + " " + months[month] + " " + year;
+	</script>
+	
+	<script type="text/javascript">
+	const quotes = [
+		{
+			"quote": "Kita Ada Karna Cinta", "source": "Pop"
+		},
+		{
+			"quote": "Bak Bidadari Turun Dari Langit", "source": "Pop"
+		},
+		{
+			"quote": "Jangan Ada Perpisahan", "source": "Pop"
+		},
+		{
+			"quote": "Aku Mencintaimu", "source": "Pop"
+		},
+		{
+			"quote": "Tetaplah Bersamaku", "source": "Pop"
+		},
+		{
+			"quote": "Pujaan Hati", "source": "Pop"
+		},
+		{
+			"quote": "Kau Lebih Dari Indah", "source": "Pop"
+		},]
+	function randomQuote() {
+		let random = quotes[Math.floor(Math.random() * quotes.length)];
+		quotation.innerText = `"${random.quote}"`;
+		source.innerText = random.source;
+	}
+	setInterval(randomQuote, 4000);
+	</script>
+	
+	<script>
+		if (window.print) {
+			document.write("<form>' + 'input type=button name=print value=Popop' + 'onclick="javascript:window.print()"> To Print this page!</form>");
+		}
+	</script>
+
+</body>
+</html>

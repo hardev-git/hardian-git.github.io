@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Prompt&display=swap);
+html {
+scroll-behavior: smooth;
+-ms-scroll-behavior: smooth;
+-webkit-scroll-behavior: smooth;
+}
+
+body {
+margin: 0px;
+padding: 0px;
+background: url("gif/wallp.gif") center center fixed;
+background-color: #121212;
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: fixed;
+-webkit-background-size: 100%;
+-webkit-background-repeat: no-repeat;
+-webkit-background-position: fixed;
+}
+
+* {
+box-sizing: border-box;
+}
+
+div i, span i, button i, i {
+vertical-align: ;
+color: whitesmoke;
+}
+
+/**/
+
+.mySlides {
+display: block;
+margin: 0 auto;
+width: 200px;
+height: 200px;
+object-fit: scale-down;
+border: 1px solid #DDD;
+border-radius: 6px;
+box-shadow: 0px 0px 6px 1px #222;
+-webkit-box-shadow: 0px 0px 6px 1px #222;
+}
+
+.profile {
+display: block;
+margin: 0 auto;
+margin-top: 20px;
+width: 170px;
+height: 170px;
+object-fit: cover;
+border-radius: 50%;
+box-shadow: 0px 0px 6px 0px #EEE;
+-moz-box-shadow: 0px 0px 6px 0px #EEE;
+-webkit-box-shadow: 0px 0px 6px 0px #EEE;
+}
+
+.wall {
+display: block;
+margin: 0 auto;
+margin-top: 20px;
+width: 100%;
+height: auto;
+object-fit: cover;
+border-radius: 10px 10px 0px 0px;
+box-shadow: 0px 0px 6px 0px #EEE;
+-moz-box-shadow: 0px 0px 6px 0px #EEE;
+-webkit-box-shadow: 0px 0px 6px 0px #EEE;
+}
+
+.konten {
+display: block;
+width: 94%;
+margin: 0px auto;
+padding: 0px;
+padding-bottom: 4px;
+}
+
+h4 {
+display: block;
+margin: 0px;
+padding: 6px 6px;
+font-family: 'Prompt', sans-serif;
+font-weight: 600;
+color: dodgerblue;
+background-color: whitesmoke;
+border-radius: 0px 0px 15px 15px;
+}
+
+.accordion {
+width: 100%;
+margin-top: 8px;
+padding: 0px auto;
+text-align: left;
+font-size: normal;
+font-weight: 600;
+font-family: 'Prompt', sans-serif;
+color: whitesmoke;
+background-color: dodgerblue;
+border: none;
+border-left: 4px solid whitesmoke;
+border-radius: 15px;
+outline: none;
+cursor: pointer;
+transition: 0.5s;
+-moz-transition: 0.5s;
+-webkit-transition: 0.5s;
+}
+
+.active, .accordion:hover {
+background-color: lightseagreen;
+border-left: 4px solid salmon;
+border-radius: 15px 15px 2px 2px;
+}
+
+.panel {
+max-height: 0px;
+margin: 0px;
+padding: 0px 12px;
+overflow: hidden;
+background-color: rgba(0,0,0,0.8);
+border-radius: 2px 2px 15px 15px;
+transition: max-height 0.5s ease-out;
+-moz-transition: max-height 0.5s ease-out;
+-webkit-transition: max-height 0.5s ease-out;
+}
+
+.panel p {
+margin: 6px 0px 6px 0px;
+font-size: normal;
+font-weight: 400;
+font-family: 'Prompt', sans-serif;
+color: whitesmoke;
+}
+
+.panel p .bg {
+display: inline-block;
+margin-top: 2px;
+padding: 2px 2px;
+font-size: normal;
+font-weight: 400;
+font-family: 'Prompt', sans-serif;
+color: whitesmoke;
+background-color: dodgerblue;
+border-radius: 4px;
+}
+
+.panel img {
+display: block;
+margin: 0px auto;
+width: 40px;
+height: auto;
+object-fit: cover;
+}
+
+.img-abs {
+display: block;
+position: fixed;
+width: 50px;
+height: 50px;
+}
+
+.text-fitur {
+font-weight: 800 !important;
+color: salmon !important;
+}
+
+/**/
+
+.container, footer {
+width: 100%;
+position: relative;
+margin-top: 8px;
+}
+
+/**/
+
+.slide {
+display: none;
+}
+
+.slide img {
+border-radius: 15px 15px 0px 0px;
+}
+
+.cursor {
+cursor: pointer;
+}
+
+.numbertext {
+top: 0px;
+position: absolute;
+padding: 20px 12px;
+font-size: normal;
+font-weight: 800;
+font-family: sans-serif;
+color: whitesmoke;
+}
+
+.mundur, .maju {
+top: 20%;
+position: absolute;
+width: auto;
+margin-top: 60px;
+padding: 6px 6px;
+font-size: normal;
+font-weight: 800;
+color: whitesmoke;
+border-radius: 0px 12px 12px 0px;
+outline: none;
+cursor: pointer;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+}
+
+.maju {
+right: 0px;
+border-radius: 12px 0px 0px 12px;
+}
+
+.mundur:hover, .maju:hover {
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+.caption-container {
+padding: 14px;
+text-align: center;
+background-color: dodgerblue;
+}
+
+#caption {
+margin: 0px;
+font-size: normal;
+font-weight: 400;
+font-family: 'Prompt', sans-serif;
+color: whitesmoke;
+}
+
+.row:after {
+content: "";
+clear: both;
+display: table;
+}
+
+.column {
+float: left;
+width: 25%;
+height: auto 350px;
+object-fit: cover;
+}
+
+.img-slide {
+opacity: 0.8;
+filter: blur(1px);
+-moz-filter: blur(1px);
+-webkit-filter: blur(1px);
+transition: 1s;
+-moz-transition: 1s;
+-webkit-transition: 1s;
+}
+
+.aktif, .img-slide:hover {
+opacity: 1;
+filter: none;
+-moz-filter: none;
+-webkit-filter: none;
+}
+
+/**/
+
+.image {
+display: block;
+margin: 0px auto;
+width: 100px;
+height: 100px;
+object-fit: cover;
+border-radius: 50%;
+}
+
+.overlay {
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+position: absolute;
+width: 0%;
+height: 100%;
+overflow: hidden;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 15px;
+transition: 0.5s ease;
+-moz-transition: 0.5s ease;
+-webkit-transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+width: 100%;
+}
+
+.text {
+top: 50%;
+left: 50%;
+position: absolute;
+white-space: nowrap;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+}
+
+.text p {
+margin: 8px 8px;
+font-size: normal;
+font-weight: 400;
+font-family: 'Prompt', sans-serif;
+color: whitesmoke;
+}
+
+/**/
+
+.switch {
+display: inline-block;
+position: relative;
+width: 50px;
+height: 22px;
+}
+
+.switch input { 
+width: 0%;
+height: 0%;
+opacity: 0;
+}
+
+.slider {
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 2px;
+position: absolute;
+background-color: #555;
+cursor: pointer;
+transition: 0.5s;
+-moz-transition: 0.5s;
+-webkit-transition: 0.5s;
+}
+
+.slider:before {
+content: "";
+position: absolute;
+left: 6px;
+bottom: 3px;
+width: 14px;
+height: 14px;
+background-color: whitesmoke;
+transition: 0.5s;
+-moz-transition: 0.5s;
+-webkit-transition: 0.5s;
+}
+
+input:checked + .slider {
+background-color: dodgerblue;
+}
+
+input:focus + .slider {
+box-shadow: 0px 0px 4px #555;
+-moz-box-shadow: 0px 0px 4px #555;
+-webkit-box-shadow: 0px 0px 4px #555;
+}
+
+input:checked + .slider:before {
+transform: translateX(24px);
+-ms-transform: translateX(24px);
+-webkit-transform: translateX(24px);
+}
+
+.slider.round {
+border-radius: 20px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+/**/
+
+footer {
+margin-top: 15px;
+padding: 8px 8px;
+background-color: rgba(0, 0, 0, 0.3);
+border-radius: 10px;
+}
+
+footer p {
+margin: 0px;
+font-size: normal;
+font-weight: 400;
+font-family: 'Prompt';
+color: snow;
+}
+
+footer sub, footer sub a {
+font-size: normal;
+font-weight: 400;
+font-family: 'Prompt';
+color: whitesmoke;
+}
+
+/**/
+
+.blink {
+animation-name: blinker;
+-ms-animation-name: blinker;
+-webkit-animation-name: blinker;
+-ms-animation-duration: 3s;
+-webkit-animation-duration: 3s;
+-ms-animation-timing-function: linear;
+-webkit-animation-timing-function: linear;
+-ms-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blinker {
+    20% {
+        color: black;
+    }
+    40% {
+        color: dodgerblue;
+    }
+    60% {
+        color: salmon;
+    }
+    80% {
+    	color: lightseagreen;
+    }
+}
+
+@-webkit-keyframes blinker {
+    20% {
+        color: black;
+    }
+    40% {
+        color: dodgerblue;
+    }
+    60% {
+        color: salmon;
+    }
+    80% {
+    	color: lightseagreen;
+    }
+}
+
+progress {
+left: 0px;
+right: 0px;
+bottom: 0px;
+position: fixed;
+z-index: 100;
+width: 100%;
+height: 5px;
+border: none;
+appearance: none;
+-webkit-appearance: none;
+}
+
+.progress-container {
+
+}
+
+.progress-bar {
+
+}
+
+progress::-webkit-progress-bar {
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flat::-webkit-progress-value {
+background-color: dodgerblue;
+}
+
+.single::-webkit-progress-value {
+background-color: dodgerblue;
+background-image: -webkit-linear-gradient(left, transparent, transparent);
+}
+
+.multiple::-webkit-progress-bar {
+background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.2) 33%, rgba(0,0, 0, 0.2) 66%, transparent 66%), -webkit-linear-gradient(left, transparent, transparent);
+}
